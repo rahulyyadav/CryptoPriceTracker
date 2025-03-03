@@ -40,5 +40,6 @@ Initially, there was a compatibility issue with `react-query` and React 19.0.0. 
 
 Zustand was implemented to manage the app's state, handling data fetching, loading states, and error management efficiently.
 
-##Author
+### Author
+
 Rahul Yadav
