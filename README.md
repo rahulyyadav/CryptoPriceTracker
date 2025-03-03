@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Crypto Price Tracker
+
+This project is a simple Crypto Price Tracker built with Next.js. It displays live cryptocurrency prices for Bitcoin, Ethereum, Ripple, Cardano, and Solana.
 
 ## Getting Started
 
-First, run the development server:
+To run the web app, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
+
+## API Integration Details
+
+The app uses the CoinGecko API to fetch live cryptocurrency prices. The API endpoint used is:
+
+```
+https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,ripple,cardano,solana&vs_currencies=usd
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## State Management Explanation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Zustand is used for state management in this project. It was chosen for its simplicity and ease of use. Zustand allows us to manage the app's state without the boilerplate of other state management libraries.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Challenges & Solutions
 
-## Learn More
+### Challenge: React Version Compatibility
 
-To learn more about Next.js, take a look at the following resources:
+Initially, there was a compatibility issue with `react-query` and React 19.0.0. To resolve this, we switched to Zustand for state management, which is compatible with the current React version.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Solution: Zustand Implementation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Zustand was implemented to manage the app's state, handling data fetching, loading states, and error management efficiently.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+##Author
+Rahul Yadav

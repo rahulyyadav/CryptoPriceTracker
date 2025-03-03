@@ -1,0 +1,51 @@
+{
+  "bitcoin": {
+    "name": "Bitcoin",
+    "symbol": "BTC",
+    "historicalData": [
+      {
+        "timestamp": 1741026531478,
+        "price": 88354
+      },
+      {
+        "timestamp": 1741026555013,
+        "price": 87583
+      }
+    ]
+  },
+  "ethereum": {
+    "name": "Ethereum",
+    "symbol": "ETH",
+    "historicalData": [
+      {
+        "timestamp": 1741026555018,
+        "price": 2222.71
+      }
+    ]
+  },
+  "ripple": {
+    "name": "XRP",
+    "symbol": "XRP",
+    "historicalData": [
+      {
+        "timestamp": 1741026515417,
+        "price": 2.54
+      }
+    ]
+  },
+  "cardano": {
+    "name": "Cardano",
+    "symbol": "ADA",
+    "historicalData": [
+      {
+        "timestamp": 1741026531485,
+        "price": 0.928426
+      }
+    ]
+  },
+  "solana": {
+    "name": "Solana",
+    "symbol": "SOL",
+    "historicalData": []
+  }
+}
